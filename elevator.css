@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+#building {
+	width: 1000px;
+	margin: 50px auto;
+	border: 1px solid #999;
+	padding: 0 15px;
+}
+
+#building #basement {
+	clear: both;
+}
+
+#building .elevator {
+	width: 32%;
+	float: left;
+	border-right: 1px dashed #999;
+	border-left: 1px dashed #999;
+	margin-right: 1%;
+}
+
+#building .floor {
+	height: 20px;
+	border-bottom: 1px dotted #000;
+	color: #dddddd;
+	font-family: 'PT Sans';
+	font-size: 14px;
+	text-align: center;
+}
+
+#building .floor span {
+	width: 50px;
+	display: inline-block;
+	text-align: center;
+}
+
+#building .floor:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+#building .floor:last-child {
+	border-bottom: none;
+}
+
+#building .floor.calledFromElevator span, #building .floor.calledUp .call-up, #building .floor.calledDown .call-down {
+	color: #333333;
+}
+
+#building .floor.hasElevator {
+	background: #ff9999;
+	color: #fff;
+	font-weight: bold;
+}
+
+#building .floor.hasElevator:hover {
+	color: #dddddd;
+	cursor: not-allowed;
+}
