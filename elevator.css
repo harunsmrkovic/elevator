@@ -43,8 +43,12 @@
 	border-bottom: none;
 }
 
-#building .floor.calledFromElevator span, #building .floor.calledUp .call-up, #building .floor.calledDown .call-down {
+#building .floor.calledFromElevator span {
 	color: #333333;
+}
+
+#building .floor.calledUp .call-up, #building .floor.calledDown .call-down {
+	color: green;
 }
 
 #building .floor.hasElevator {
